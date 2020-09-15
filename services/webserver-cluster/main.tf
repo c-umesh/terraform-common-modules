@@ -73,7 +73,7 @@ resource "aws_elb" "classic_elb" {
 
   health_check {
     healthy_threshold = 5
-    interval = 10
+    interval = 8
     target = "HTTP:${var.server_port}/"
     timeout = 5
     unhealthy_threshold = 2
